@@ -7,13 +7,17 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    font-family: "Lucida Console", "Courier New", monospace;
-	background-color:#e7e2d2;
+    font-family: 'Nunito', sans-serif; /* Clean body text */
+    background-color: #dbe0e9;
 }
 
 .header {
     text-align: center;
     padding: 10px;
+    font-family: 'Fredoka', sans-serif; /* Rounded Fredoka font */
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #2F3140;
 }
 
 .suggestions {
@@ -30,9 +34,10 @@ body {
     max-width: 800px;
     width: 100%;
     margin: 0 auto;
-	color: #554e39;
-	border-radius: 12px;
-	border: 4px solid #554e39;
+    color: #554e39;
+    border-radius: 12px;
+    border: 4px solid #2F3140;
+    background-color: #ffffff;
 }
 
 #messages {
@@ -41,9 +46,9 @@ body {
     border: 1px solid #ccc;
     padding: 10px;
     overflow-y: auto;
-	border-radius: 6px;
-	border: 2px solid #554e39;
-
+    border-radius: 6px;
+    border: 2px solid #2F3140;
+    background-color: #f8f9fc;
 }
 
 .message {
@@ -71,9 +76,10 @@ body {
 
 #message-input {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
     border: 1px solid #ccc;
-	font-family: "Lucida Console", "Courier New", monospace;
+    font-family: inherit;
+    border-radius: 6px;
 }
 
 button {
@@ -82,19 +88,22 @@ button {
     background: #1d5083;
     border: none;
     cursor: pointer;
-	font-family: "Lucida Console", "Courier New", monospace;
+    font-family: 'Fredoka', sans-serif; /* Rounded button text */
+    font-weight: 600;
+    border-radius: 6px;
 }
 
 #new-chat-btn {
-    background: #475624;
-	font-family: "Lucida Console", "Courier New", monospace;
+    background: #545A66;
 }
 
 .suggestion-btn {
-    background: #9bb958;
+    background: #3D488A;
     color: #fff;
     padding: 8px 16px;
     border: none;
     cursor: pointer;
-	font-family: "Lucida Console", "Courier New", monospace;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 600;
+    border-radius: 6px;
 }

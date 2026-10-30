@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Major Explorer Chat</title>
+    <title>StudyKit AI</title>
+
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Outfit:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="header">
-        <h1>Welcome to MajorGPT</h1>
+        <h1>Welcome to StudyKit AI</h1>
         <p>How can we help you today?</p>
     </div>
     <div class="suggestions">
-        <button class="suggestion-btn" onclick="usePrompt('What does my best core subject say about me?')">Subject to Major</button>
-        <button class="suggestion-btn" onclick="usePrompt('What does my hobbies say about me?')">Hobbies to Major</button>
-        <button class="suggestion-btn" onclick="usePrompt('What does my personality traits say about me?')">Personality to Major</button>
+        <button class="suggestion-btn" onclick="usePrompt('Generate me an interactive, in chat quiz about my desired topic')">Interactive Quiz</button>
+        <button class="suggestion-btn" onclick="usePrompt('With the information I provide, make a spreadsheet that can be converted into a blooket')">Blooket Spreadsheet</button>
+        <button class="suggestion-btn" onclick="usePrompt('With the information I provide, make a spreadsheet that can be converted into a Quizlet/Anki deck')">Quizlet/Anki Deck</button>
     </div>
     <div id="chat-container">
         <div id="messages"></div>

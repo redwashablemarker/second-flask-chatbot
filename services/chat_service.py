@@ -37,7 +37,7 @@ class ChatService:
             conversation = self.chat_manager.get_conversation(user_id, chat_id)
             
             response = self.openai_client.chat.completions.create(
-                model="gpt-4",
+                model="gpt-4o",
                 messages=conversation,
                 temperature=0.7,
                 max_tokens=500

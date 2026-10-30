@@ -1,3 +1,6 @@
+from dotenv import load_dotenv
+load_dotenv()
+
 from flask import Flask, render_template
 from controllers.chat_controller import ChatController
 
